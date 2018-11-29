@@ -25,4 +25,5 @@ def get_test_data(d):
     # with open(data_path, 'r', encoding='UTF-8') as f: #mac
     with open(data_path, 'r') as f:
         data = json.load(f)
+    print(d.device_info['serial'])
     return data[d.device_info['serial']]

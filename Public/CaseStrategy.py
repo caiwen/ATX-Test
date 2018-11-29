@@ -6,7 +6,7 @@ class CaseStrategy:
     def __init__(self):
         self.suite_path = 'TestSuite_'
         self.case_path = 'TestCase'
-        self.case_pattern = 'test*.py'
+        self.case_pattern = 'test_gearbest_*.py'
 
     def _collect_cases(self, cases, top_dir=None):
         suites = unittest.defaultTestLoader.discover(self.case_path,
